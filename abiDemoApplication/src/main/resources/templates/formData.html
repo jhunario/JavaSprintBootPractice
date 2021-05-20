@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Weather Data</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body
+	background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nationalgeographic.org%2Fencyclopedia%2Fweather%2F&psig=AOvVaw3cD5MHNB1_gaCdjepZmzt6&ust=1619050046887000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjZtsmFjvACFQAAAAAdAAAAABAD">
+	<h2>Weather API</h2>
+	<div class="div">
+		<a href="#" th:href="@{/weather}" style="text-decoration: none" class="link">WEATHER DATA</a>
+	</div>
+
+	<form action="weather" method="post">
+		<div>
+			<label>Enter the city name to check the weather</label> <input
+				type="text" name="city">
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
